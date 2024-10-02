@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #FAF9F6;
+}
+
+.layout {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 400px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px;
+}
+
+.navbar h1 {
+  margin: 20px 0px;
+  font-size: 40px;
+}
+
+.navbar p {
+  margin: 10px 0px;
+  font-size: 19px;
+}
+
+.navbar ul {
+  margin-top: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.navbar li:hover {
+  background-color: black;
+  color: white;
+}
+
+.profile-picture {
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 999px;
+  box-shadow: 3px 3px;
+}
+
+#copyright {
+  font-size: 16px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.content img {
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 40px 40px 20px 0px;
+  box-shadow: 5px 5px;
+  transition: all 0.2s ease-in;
+}
+
+.project-card:hover {
+  transition: all 0.2s ease-out;
+  transform: translateX(-15px);
+  transform: translateY(-10px);
+  box-shadow: 8px 8px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-link {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  color: blue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin-left: 440px;
+}
+
+section h2 {
+  font-size: 36px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 20px 40px 20px 0px;
+}
+
+.icon i {
+  font-size: 100px;
+}
+
+.icon p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.languages-card {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 40px 40px 20px 0px;
+  box-shadow: 5px 5px;
+  width: fit-content;
+}
+
+.languages-card-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
