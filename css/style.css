@@ -99,11 +99,6 @@ body {
   border-radius: 10px;
 }
 
-#projects a {
-  text-decoration: none;
-  color: black;
-}
-
 .project-card {
   background-color: white;
   padding: 20px;
@@ -129,6 +124,8 @@ body {
 .project-link {
   margin-top: 40px;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 .project-link:hover {
