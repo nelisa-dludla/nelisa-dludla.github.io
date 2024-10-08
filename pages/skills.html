@@ -11,13 +11,17 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     >
   </head>
-  <body class="layout">
-    <nav class="navbar">
-      <img
-        class="profile-picture"
-        src="../assets/images/nelisa.jpg"
-        alt="A picture of Nelisa"
-      >
+  <body id="layout">
+    <div id="burger-menu-background"></div>
+    <nav id="navbar">
+      <div class="profile-close">
+        <img
+          class="profile-picture"
+          src="../assets/images/nelisa.jpg"
+          alt="A picture of Nelisa"
+        >
+        <button id="close-button" ><img src="../assets/icons/times.svg" alt="Hamburger Menu Icon" width="35px"></button>
+      </div>
       <h1>Web Developer</h1>
       <p>
         I'm a self-taught web developer passionate about building user-friendly
@@ -38,7 +42,8 @@
 
       <p id="copyright">&copy; 2024 Nelisa Dludla</p>
     </nav>
-    <section>
+    <section id="skills">
+      <button id="burger-menu" ><img src="../assets/icons/burger-menu.svg" alt="Hamburger Menu Icon" width="35px"></button>
       <h2>Skills</h2>
       <div class="skills">
         <div class="languages-card">
@@ -157,5 +162,7 @@
         </div>
       </div>
     </section>
+    <script src="../js/index.js">
+    </script>
   </body>
 </html>

@@ -13,11 +13,11 @@ body {
   background-color: #faf9f6;
 }
 
-.layout {
+#layout {
   display: flex;
 }
 
-.navbar {
+#navbar {
   display: flex;
   flex-direction: column;
   padding: 1.25em;
@@ -34,32 +34,33 @@ body {
   overflow-y: auto;
 }
 
-.navbar h1 {
+#navbar h1 {
   margin: 1.25px 0px;
   font-size: 2.5em;
+  margin: 10px 0px 10px 0px;
 }
 
-.navbar p {
+#navbar p {
   margin: 10px 0px;
   font-size: 1.1875rem;
 }
 
-.navbar ul {
+#navbar ul {
   margin-top: 6.25rem;
 }
 
-.navbar a {
+#navbar a {
   text-decoration: none;
   color: black;
   display: block;
 }
 
-.navbar a:hover {
+#navbar a:hover {
   color: white;
   padding: 10px;
 }
 
-.navbar li {
+#navbar li {
   list-style: none;
   font-size: 1.13rem;
   font-weight: bold;
@@ -67,7 +68,7 @@ body {
   border-bottom: 1px solid gray;
 }
 
-.navbar li:hover {
+#navbar li:hover {
   background-color: black;
   color: white;
   padding: 0px;
@@ -78,6 +79,12 @@ body {
   border: 2px solid black;
   border-radius: 999px;
   box-shadow: 3px 3px;
+  display: inline-block;
+}
+
+/* Div that houses the profile picture and close button */
+.profile-close {
+  display: flex;
 }
 
 #copyright {
@@ -98,6 +105,10 @@ body {
   width: 100%;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+#projects {
+  padding: 40px;
 }
 
 .project-card {
@@ -145,6 +156,10 @@ section h2 {
   font-size: 2.25rem;
 }
 
+#skills {
+  padding: 40px;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -183,25 +198,25 @@ section h2 {
     width: 6rem;
   }
 
-  .navbar h1 {
+  #navbar h1 {
     font-size: 2em;
   }
 
-  .navbar ul {
+  #navbar ul {
     margin-top: 2rem;
   }
 
-  .navbar p {
+  #navbar p {
     margin: 10px 0px;
     font-size: 1rem;
   }
 
-  .navbar li {
+  #navbar li {
     font-size: 1rem;
     padding: 8px;
   }
 
-  .navbar a:hover {
+  #navbar a:hover {
     padding: 8px;
   }
 
@@ -214,5 +229,81 @@ section h2 {
     margin: 40px 40px 20px 0px;
     box-shadow: 5px 5px;
     transition: all 0.2s ease-in;
+  }
+}
+
+#burger-menu {
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+  margin-left: auto;
+  background-color: white;
+  cursor: pointer;
+}
+
+#burger-menu-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: absolute;
+}
+
+#close-button {
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+  margin-left: auto;
+  background-color: white;
+  cursor: pointer;
+  max-height: 50px;
+}
+
+@media (max-width: 992px) {
+  #navbar {
+    display: none;
+  }
+
+  section {
+    margin-left: 0rem;
+  }
+
+  .icon img {
+    width: 80px;
+  }
+
+  .icon i {
+    font-size: 5rem;
+  }
+
+  .icon p {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 993px) {
+  #burger-menu {
+    display: none;
+  }
+
+  #close-button {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .icon {
+    margin: 20px 30px 20px 0px;
+  }
+
+  .icon img {
+    width: 60px;
+  }
+
+  .icon i {
+    font-size: 4.25rem;
   }
 }
