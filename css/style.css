@@ -20,6 +20,7 @@ body {
 #navbar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1.25em;
   max-width: 25em;
   position: fixed;
@@ -89,7 +90,7 @@ body {
 
 #copyright {
   font-size: 1rem;
-  margin-top: auto;
+  //margin-top: auto;
   text-align: center;
 }
 
@@ -295,6 +296,10 @@ section h2 {
 }
 
 @media (max-width: 410px) {
+  #navbar ul {
+    margin-top: 3rem;
+  }
+
   .icon {
     margin: 20px 30px 20px 0px;
   }
